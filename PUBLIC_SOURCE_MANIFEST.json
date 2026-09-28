@@ -1,0 +1,633 @@
+{
+  "version": "1.5.0",
+  "files": [
+    {
+      "path": "package-lock.json",
+      "sha256": "b14ad66f5b18a3ddf0a493877151c58e4ac888a6cdc93e510e5b3b5d31b87933"
+    },
+    {
+      "path": "package.json",
+      "sha256": "1be0cd726652a31b4469bc6d3f3c2a4f982f6bfdaa3cce132f6e10a6c9eb0e41"
+    },
+    {
+      "path": "学习页/package.json",
+      "sha256": "360257afa28ee543ffe04579035c847c00a4fdfedbbf1832ac4db1dec4a89f0f"
+    },
+    {
+      "path": "学习页/public/app.js",
+      "sha256": "8f9b78ae26a57b97dc1d3d7a45707ad7d089ec7a04502e6fee5244ea599079ba"
+    },
+    {
+      "path": "学习页/public/course-data.js",
+      "sha256": "8cb89249d18ad815a5a924ffe5954fb87e5d24d4e59b8a015d39ed7fe55b7d2a"
+    },
+    {
+      "path": "学习页/public/course.js",
+      "sha256": "0a7cb95296648bb7ea19fc1f6fa3aaedc17f471b61299920c1316c80b4e95d6a"
+    },
+    {
+      "path": "学习页/public/course.test.mjs",
+      "sha256": "99af091200fb04ade6e7e98a229efd43326318c87bd4d794ed355b13034ccb88"
+    },
+    {
+      "path": "学习页/public/index.html",
+      "sha256": "db860d4e7d29d191c45456e71bdb525439feba8938936f6498405fab90dab193"
+    },
+    {
+      "path": "学习页/public/lifecycle.test.mjs",
+      "sha256": "134e6ce38cf56f076e4ee50d84ada2ef921c2adaae5d0cf1130e3eff957110bf"
+    },
+    {
+      "path": "学习页/public/markdown.js",
+      "sha256": "7ac516ff1fbd9dae3726785b46817931e6286a18c2897a8f34a1120310e856ba"
+    },
+    {
+      "path": "学习页/public/markdown.test.mjs",
+      "sha256": "eefe65863db5209cf67fdaef7fcdaa3fe899e19b4bd9991fd9fae7c48da5c282"
+    },
+    {
+      "path": "学习页/public/practice.css",
+      "sha256": "f5b842d8feee8aa75b920555d5c4d3e63aa6a38ae55c464d3a616f30e9677857"
+    },
+    {
+      "path": "学习页/public/practice.js",
+      "sha256": "c60bab6f18b2deb6c96add9fc509121b7b8011a6c9af6a53a682d34f95e94e87"
+    },
+    {
+      "path": "学习页/public/quiz-data.js",
+      "sha256": "1d082a52fac53b2b679497ce049e76f5086cd740ff999ebee6d09b1d5ebca224"
+    },
+    {
+      "path": "学习页/public/quiz.css",
+      "sha256": "57e0912c3aec029a9e851e44e21d25d060f28f3329a88583031f7a1695dc75d2"
+    },
+    {
+      "path": "学习页/public/quiz.js",
+      "sha256": "2046104fb58d9d05f86c68673a4bb0495abe1a2c9a456c2c6482c9caaa8c98d8"
+    },
+    {
+      "path": "学习页/public/quiz.test.mjs",
+      "sha256": "1c7fcd309f516c0fd4d46f51fc626706b58b3ad651ecff04b20ae38dff977c70"
+    },
+    {
+      "path": "学习页/public/reader.css",
+      "sha256": "ac5fac235945e5622f816444614c2bdc8b19a9006f8dd9669a4e847bf88f8585"
+    },
+    {
+      "path": "学习页/public/reader.js",
+      "sha256": "9cc2152a3b55f8953a8debfed3ce1489b96004d2ddcd63a1eceef0c57c6cecfc"
+    },
+    {
+      "path": "学习页/public/storage.js",
+      "sha256": "d9c11fd511b24591e28c7187b11835f6c38896358f11c1d77d14831d9823eefd"
+    },
+    {
+      "path": "学习页/public/structure.js",
+      "sha256": "4cdb8aa77a31448edf90295324eba42e631e3a9f319b3f6fe5ef2e520ddcb832"
+    },
+    {
+      "path": "学习页/public/styles.css",
+      "sha256": "bad1eed60c15bb32af1a72436f6031a40eaa7cdceb361640d906e1bf9be3638f"
+    },
+    {
+      "path": "学习页/server.mjs",
+      "sha256": "0cea99209a00c780eb15c85c852fc12c0cda647eebc84da04ef0f609fbdc3a79"
+    },
+    {
+      "path": "学习页/server.test.mjs",
+      "sha256": "3980dd485a24065ce7a8445cb87c90f49095f8503789c55555c85ad7ef781672"
+    },
+    {
+      "path": "学习页/storage.test.mjs",
+      "sha256": "a6f03281253d3e49d0023ec12f9ab5d7bc83f0fd761c91af07522f0e9d6bd870"
+    },
+    {
+      "path": "学习页/structure.test.mjs",
+      "sha256": "32b6cb415a0d2a1f3b940f0172877bf5339f2968159b67c88c4b7abaae1a0b20"
+    },
+    {
+      "path": "实录/_模板-实录.md",
+      "sha256": "9157ad9fbd2e3ee6093442c512bed373e3d7485eeca8293a260c2f5ab7d96829"
+    },
+    {
+      "path": "桌面/PUBLIC_README.md",
+      "sha256": "6919e0f08563d7636bd587f37f8c8f3171c69f77c71bcc4004430f62891ec564"
+    },
+    {
+      "path": "桌面/ai.mjs",
+      "sha256": "d2b943edb435e0ad9783fe6cef6894e4e803a1eb54dcdce17ef3e26991781ad9"
+    },
+    {
+      "path": "桌面/ai.test.mjs",
+      "sha256": "3f90a2dbb760dac34603ed77c1d1f31046ad855e43a0aff3159591cfb045ec3f"
+    },
+    {
+      "path": "桌面/assets/icon.ico",
+      "sha256": "591e8deb7d647fed1bac0b57a0882d1212c2da0b1437c6d74d12c98dc20b1d79"
+    },
+    {
+      "path": "桌面/build-icon.mjs",
+      "sha256": "44892061d621933d1890786ba9e70b2a42be7c91f00947b34589169fc53e72b0"
+    },
+    {
+      "path": "桌面/data.mjs",
+      "sha256": "057dfaa88ae9676206c7712c86700289ffbedcab248eea20664e8c29c8bc4b96"
+    },
+    {
+      "path": "桌面/data.test.mjs",
+      "sha256": "fa17172c0b3394e8fc0a545487cc9199a025eae0eee74755c91012fceade361d"
+    },
+    {
+      "path": "桌面/export-public.mjs",
+      "sha256": "22b24f964dab46098c50b625872f2ab47de3b4a4f6e78fd1369db1ad26f37ee4"
+    },
+    {
+      "path": "桌面/main.mjs",
+      "sha256": "438eeea376a66184a8ac7e271779c7559fa6f53130b224682efa6d7db5672ed8"
+    },
+    {
+      "path": "桌面/preload.cjs",
+      "sha256": "aba98bc0ea4bc34beeb4cd38134bbd6c9118a9348e01e24f308e8969b43bc191"
+    },
+    {
+      "path": "桌面/prepare-release.mjs",
+      "sha256": "ae8fbebc26e4fffaddf43101226f33199d6beffdd6ca63240e7761e4c0dc646b"
+    },
+    {
+      "path": "桌面/verify-distribution.mjs",
+      "sha256": "57f0bf8ae9575d68b707e77baea88e567f58ce99b52785ebd78c1e0424f8a0bd"
+    },
+    {
+      "path": "桌面/verify-layout.mjs",
+      "sha256": "7825c3acfabf32432491e3f635561c40b4c0f46d79adca221533cc5150cd25ea"
+    },
+    {
+      "path": "桌面/verify-opportunities.mjs",
+      "sha256": "eb167ec40ea7ab4145a322ed96f471b419f5de69d6d58f62526b316d82fa5db6"
+    },
+    {
+      "path": "桌面/verify-periodic.mjs",
+      "sha256": "810a9d1d56b955350c50a953f83697106376757dc869358e1274910e51a4a5f6"
+    },
+    {
+      "path": "桌面/verify-portable.mjs",
+      "sha256": "b64abf0c542533e9f051b9ca9eafe5b0cd274c2ca168779a6a21d0aaaa826952"
+    },
+    {
+      "path": "知识库/知识卡00-总索引与定域路由.md",
+      "sha256": "0917f8a6b304a0a23d80d25e3af7574b75b7d090c0494a8ef0b28a64719af528"
+    },
+    {
+      "path": "知识库/知识卡01-乾卦.md",
+      "sha256": "1ee4f3f74b4c3595914267af3ed863491d11a52a60bd3e18c8a5665f5352c929"
+    },
+    {
+      "path": "知识库/知识卡02-坤卦.md",
+      "sha256": "e663b98fcc43102c1a6a7126c4a800d010d2076ee68b8276bfee5be2a428131f"
+    },
+    {
+      "path": "知识库/知识卡03-屯卦.md",
+      "sha256": "a092f10a16e9491379fd4a03bb06db526ca973a1c4e363e7d29c13d5343c4dfe"
+    },
+    {
+      "path": "知识库/知识卡04-蒙卦.md",
+      "sha256": "cf72fe5756eae5a9c81127a3ae82c7461bd9a58d75ad814cdd1e1f9c8ab4f154"
+    },
+    {
+      "path": "知识库/知识卡05-需卦.md",
+      "sha256": "f5adb13e4aa5ae9cc59ee9a87ca095171903a136d7fcea54456d20cab7da6275"
+    },
+    {
+      "path": "知识库/知识卡06-讼卦.md",
+      "sha256": "78abd08063863635588a72549a5cd0562157a9f49e2780ee70fead696688552f"
+    },
+    {
+      "path": "知识库/知识卡07-师卦.md",
+      "sha256": "24829050435ff43822bb2f94943894bba1a2795c28d1be8b432a3e777f301790"
+    },
+    {
+      "path": "知识库/知识卡08-比卦.md",
+      "sha256": "5ccba397dcd002f6638a27d3e567e554c1d92f1a61ad0f33712ec0738aff73f5"
+    },
+    {
+      "path": "知识库/知识卡09-小畜卦.md",
+      "sha256": "cd523ec07aa09adab9c239d4b4f854acc6330eb48f1c10325f4f7338c9c494eb"
+    },
+    {
+      "path": "知识库/知识卡10-履卦.md",
+      "sha256": "bcdcf39dc2b5034045086ae1244e342efe3d4d27fa0ad6a6097a464c23699dbf"
+    },
+    {
+      "path": "知识库/知识卡11-12-泰卦与否卦.md",
+      "sha256": "dc909187fd50f2d9b079480ca3c9326f0c824df564cec9785ec0ced5aca3d6bd"
+    },
+    {
+      "path": "知识库/知识卡13-同人卦.md",
+      "sha256": "3bcff0dbf0d11c61cdb65d216f43d5a32877e390f637a23ac590c08aea745aef"
+    },
+    {
+      "path": "知识库/知识卡14-大有卦.md",
+      "sha256": "c8791c788550d720a9f82a7d559d8c518708ad1d9b0b60bbc95d2129022499fe"
+    },
+    {
+      "path": "知识库/知识卡15-谦卦.md",
+      "sha256": "91719fc5eb67361b64016d5ad97ef35e7c1c3256c57822e9c52f7b5c0d84a45e"
+    },
+    {
+      "path": "知识库/知识卡16-豫卦.md",
+      "sha256": "5ac351d856209e9c730e0cc200fa05c81975058f1d69f3da265bdb139bf37879"
+    },
+    {
+      "path": "知识库/知识卡17-随卦.md",
+      "sha256": "194f1dd78ab86217db963a9bf2a55c940877366e07e37fc0c1e39aeaf246c481"
+    },
+    {
+      "path": "知识库/知识卡18-蛊卦.md",
+      "sha256": "b635fff5fb3a1dda7e4c4fcc058c945152ebcf1648eae15d9cbc36f6ac579f88"
+    },
+    {
+      "path": "知识库/知识卡19-临卦.md",
+      "sha256": "3ad456b914d841c6f0c0da13c8c314294ec58c730730da98fcc6e2451f617a18"
+    },
+    {
+      "path": "知识库/知识卡20-观卦.md",
+      "sha256": "09e3701b112a8aa3cc699a78e331a685304f250bf05f7f5547fde0da146b8e5d"
+    },
+    {
+      "path": "知识库/知识卡21-噬嗑卦.md",
+      "sha256": "28425ef517f6deedd4729bf51070e9c549c6852c58b96a94cc25a45eb9d032b2"
+    },
+    {
+      "path": "知识库/知识卡22-贲卦.md",
+      "sha256": "b1f0eb5f85ee79f3f308ecb7dc3abdf5d9b8dbee1d5eb38c6ae4adde3d39b669"
+    },
+    {
+      "path": "知识库/知识卡23-剥卦.md",
+      "sha256": "0ed2140d55eb87120f540bd02442596170e83b5541399b4a78aca267fd02023e"
+    },
+    {
+      "path": "知识库/知识卡24-复卦.md",
+      "sha256": "19ae710f42986d006182096177a5dd61487af9cc53b58ac28efd66f25cbc77f9"
+    },
+    {
+      "path": "知识库/知识卡25-无妄卦.md",
+      "sha256": "74ec90b4e8e9b3e209fbcf55bd5027428cafd353970133354191fdff08e36fd6"
+    },
+    {
+      "path": "知识库/知识卡26-大畜卦.md",
+      "sha256": "d06302d07976826ce4146aba1f43be7ffcb3a3b15f7bd186f292524563a6a476"
+    },
+    {
+      "path": "知识库/知识卡27-颐卦.md",
+      "sha256": "8888503effdefc4edbe19f7855aaf72eb8d43e3beea8e425c0b852f91e393ed7"
+    },
+    {
+      "path": "知识库/知识卡28-大过卦.md",
+      "sha256": "7dd30c9f272177d50175f80ad4efa3c767b6d5fbb8e73fe7d26bf0602e8f1add"
+    },
+    {
+      "path": "知识库/知识卡29-坎卦.md",
+      "sha256": "17ca0eab9d59de71f8468a91ea96ce7f3908912b2c5f15f3e538d94caf8fce8b"
+    },
+    {
+      "path": "知识库/知识卡30-离卦.md",
+      "sha256": "430663f8ed0d4a9fc4864f75bbb5d70796c7b2a4ea334d2441b3dd84d1501b6f"
+    },
+    {
+      "path": "知识库/知识卡31-咸卦.md",
+      "sha256": "e84c24e1e19c9b7c68f29bb0c3905fc87900ac1643e4ad7560580f8dcb75bccb"
+    },
+    {
+      "path": "知识库/知识卡32-恒卦.md",
+      "sha256": "30f32009dcd6cff02d8d1a817df2a151f88fd3da719aa05e659bbc97f327fec5"
+    },
+    {
+      "path": "知识库/知识卡33-遯卦.md",
+      "sha256": "d945dbc24435965dc73732d01d2cdb013bdc7c61deba184d739d123b054c7df8"
+    },
+    {
+      "path": "知识库/知识卡34-大壮卦.md",
+      "sha256": "fe605743439a1a95e4182f863934dc33233c696f59fc31661213e833fe2d021b"
+    },
+    {
+      "path": "知识库/知识卡35-晋卦.md",
+      "sha256": "a452356e8da894e54cfe9132ed0b42bf1d2c8e976cbef9ac895f1bff496780c9"
+    },
+    {
+      "path": "知识库/知识卡36-明夷卦.md",
+      "sha256": "83447114f9cee16f8a768d6c7f9ec6d8d3b3667340b894b5498cd41360cb9031"
+    },
+    {
+      "path": "知识库/知识卡37-家人卦.md",
+      "sha256": "5ea356ef2a725c07d3994c1f1e15ddd846ec8502dba44038b78e89ceef486db5"
+    },
+    {
+      "path": "知识库/知识卡38-睽卦.md",
+      "sha256": "fbb5068153bde9f3ef2a326c516c94fe2c1d79f5bff4153a549174a9cfa1f5b9"
+    },
+    {
+      "path": "知识库/知识卡39-蹇卦.md",
+      "sha256": "d493c4b24588255fe9e722d025880318fef6c2c8ec63c08b77391ecc6cbd43ec"
+    },
+    {
+      "path": "知识库/知识卡40-解卦.md",
+      "sha256": "befee05ba513066dec041a58f9dc00b5ee15d887a2a94b888913b04a0db6d66a"
+    },
+    {
+      "path": "知识库/知识卡41-损卦.md",
+      "sha256": "b2748fb5d94688c6f410268f0bb98492ec2825e75c4de496197a21a70153400a"
+    },
+    {
+      "path": "知识库/知识卡42-益卦.md",
+      "sha256": "19b27b3a7cbd9c1fb49ae5689630ef4b0c795858e86e19e5a5cf602a1518e11b"
+    },
+    {
+      "path": "知识库/知识卡43-夬卦.md",
+      "sha256": "c21f55dab7bb66b3380f45fd1f7244e496f771f0cadea3927f02dd684435de5f"
+    },
+    {
+      "path": "知识库/知识卡44-姤卦.md",
+      "sha256": "882016942ee7c5d5359ae51c739379feebd8d2f84cc82f5ceb883a4e4c749854"
+    },
+    {
+      "path": "知识库/知识卡45-萃卦.md",
+      "sha256": "738f4c04eb8d97ce9cc4ce1a42afaf9bae78e9d17d0ffbbeb097e9121127d134"
+    },
+    {
+      "path": "知识库/知识卡46-升卦.md",
+      "sha256": "c4ae7dc639a1f711b9dfe2b3d02b2e89d31b2c3dcb175b74487d5ed404f8e3a3"
+    },
+    {
+      "path": "知识库/知识卡47-困卦.md",
+      "sha256": "d6436c2135c426c566163141546307ea22ae267a670814dbdda8c763c2da82fe"
+    },
+    {
+      "path": "知识库/知识卡48-井卦.md",
+      "sha256": "096f96e47dc8cd9ae5c13005e7c41f7f002cb2a3316a9a6273fbc4d8c8ac72cd"
+    },
+    {
+      "path": "知识库/知识卡49-革卦.md",
+      "sha256": "2f7875bed5e25499cace442662bab4b1f1da103ea13b546f120c91b6ae13c74e"
+    },
+    {
+      "path": "知识库/知识卡50-鼎卦.md",
+      "sha256": "528b1f91bd64eb764a55ba6714facdb6c8ae884761b74656979b06d9f41857b2"
+    },
+    {
+      "path": "知识库/知识卡51-震卦.md",
+      "sha256": "a5cae012302c2b1b6901b2ed26a45c109494b4808530e056cb18738a3c74a0c2"
+    },
+    {
+      "path": "知识库/知识卡52-艮卦.md",
+      "sha256": "da5b15cbf3586cf568c2a346100cc01a856b09d6a8c38be5b74e64cabb7488f2"
+    },
+    {
+      "path": "知识库/知识卡53-渐卦.md",
+      "sha256": "3907f8ed689d33af6b9f9c9934d469eedbfd1d7bae1b44f4339c842546b9f2c4"
+    },
+    {
+      "path": "知识库/知识卡54-归妹卦.md",
+      "sha256": "37009ed23099df20c43de9f7324c99b6da023ad9399f19ca27100229104f7153"
+    },
+    {
+      "path": "知识库/知识卡55-丰卦.md",
+      "sha256": "f8717214322232a7636085883b09faa9705af4a265ad26ea8a2e6d67d095c5fe"
+    },
+    {
+      "path": "知识库/知识卡56-旅卦.md",
+      "sha256": "8d9db47ed8ee08208871186b023ac0b8c97812f44b0b3188934a44317e922bdb"
+    },
+    {
+      "path": "知识库/知识卡57-巽卦.md",
+      "sha256": "9bacada9b23193194f571c274f001b9501cabd3373feb42fef10a12e72ec2611"
+    },
+    {
+      "path": "知识库/知识卡58-兑卦.md",
+      "sha256": "e3e60d5008b6846442ed70b713600001a80db2ab7132ea07f0d6a9d480239995"
+    },
+    {
+      "path": "知识库/知识卡59-涣卦.md",
+      "sha256": "d320463f4709baa20af20dec1c886e19c75ef96601f45fe19c92ea2fde9468d2"
+    },
+    {
+      "path": "知识库/知识卡60-节卦.md",
+      "sha256": "718e778e4115051c8f2ccf6fcc5e41c3423a4f269f5b7729eb2bd3bd784f811d"
+    },
+    {
+      "path": "知识库/知识卡61-中孚卦.md",
+      "sha256": "1ff5a0d6632784dcb0bdc71a1c36a5a0ec54f4bc8c2d189d3b04a317fce0fde3"
+    },
+    {
+      "path": "知识库/知识卡62-小过卦.md",
+      "sha256": "1a7156781a6fc08cce5852e572a34d6e2a039234228570cca91dd108a74f1245"
+    },
+    {
+      "path": "知识库/知识卡63-既济卦.md",
+      "sha256": "eac8ca89421845106ea37eeaf5430e0b2458a775756f4415a085abf44e7d3d5c"
+    },
+    {
+      "path": "知识库/知识卡64-未济卦.md",
+      "sha256": "f3cb872bd5a8ea164bfc4629757234f82f07781191f49a1349c1e2a6cd5c5207"
+    },
+    {
+      "path": "知识库/知识卡65-全64卦结构速查表.md",
+      "sha256": "e7a0d3316ba2dd5460a9a6a2baf1831fb3f881f5aff3e2de577c365d1512c2b9"
+    },
+    {
+      "path": "知识库/知识卡66-入门学习路径.md",
+      "sha256": "caab56ff1150d24aaf3c7967e49a3ee7513c1c6dda4bb1e60d55c8a966618d8a"
+    },
+    {
+      "path": "知识库/知识卡67-专题-孚与信任.md",
+      "sha256": "e057c35ff97d807ac29c19f7cce024d37a15b538bb6375bebd878b255d8e4a24"
+    },
+    {
+      "path": "知识库/知识卡68-专题-授权与用人.md",
+      "sha256": "9c0111ba4dfc1297a16e5ccde73496044554b766c9579a32cacf416ec8f88f82"
+    },
+    {
+      "path": "知识库/知识卡69-专题-尊位与放弃.md",
+      "sha256": "68bd154e9564105be82194e1e36321119b7a91be9d426be3b95942d646750008"
+    },
+    {
+      "path": "知识库/知识卡70-专题-影响力四路径.md",
+      "sha256": "4b81eee98b8e1c5821a5963f9bbef268eb6b639d43f8d59cf7efc73674e2d338"
+    },
+    {
+      "path": "知识库/知识卡71-专题-过度与分寸.md",
+      "sha256": "ccfe1fa6fc060851dacdaf8c27b69eb5e5df8f0f18193c3e286a2ef8f6bb9fa0"
+    },
+    {
+      "path": "知识库/知识卡72-专题-消息卦与周期律.md",
+      "sha256": "d36b223bcd696dc3c4089ea2638ae51238ddaed70b1803c3d1194c90e4702c55"
+    },
+    {
+      "path": "知识库/知识卡73-专题-不可控冲击.md",
+      "sha256": "c32255467109bee39da24dadd6780a3624ae1acdaf0df1caa6838d50e2debb1c"
+    },
+    {
+      "path": "知识库/知识卡74-专题-明与狱.md",
+      "sha256": "08b0d854f70685fe5094648416eaf9558abc1f48cdae95d12266500c504f94d0"
+    },
+    {
+      "path": "知识库/知识卡75-辨析题库.md",
+      "sha256": "c3f8772ffd71aa4dc77e45e9a68b2ebee5c0f9cc2dfadb6114c48a7235a4570c"
+    },
+    {
+      "path": "网页/package.json",
+      "sha256": "c8e6a1b002cf851f883b199d32ebbb7ff278d5b25ebb540a7aaf7702a7000540"
+    },
+    {
+      "path": "网页/public/index.html",
+      "sha256": "f0b093bd59186469ad54f6e03af60fea4bd85a222225537c0ce8d72c2ad793ce"
+    },
+    {
+      "path": "网页/public/shell.css",
+      "sha256": "aad55b2fb8688056225d64989e652cdcd32db7492fb8d694ee472a5effc3f825"
+    },
+    {
+      "path": "网页/public/shell.js",
+      "sha256": "a2f0f403b12e61d8bf99d775cbc35a330fa989db684d8e635b964387e73d7655"
+    },
+    {
+      "path": "网页/server.mjs",
+      "sha256": "ec1741d0398a006052c33e316e31336d0abb2aae0ce230fa604f5702215ebef0"
+    },
+    {
+      "path": "网页/server.test.mjs",
+      "sha256": "f75239473e2fadcb49f80e9e4cb587165dff62234a5e69ae2a7fc27e884d2e1e"
+    },
+    {
+      "path": "网页/shell.lifecycle.test.mjs",
+      "sha256": "4ed561c9239b9e038fe472416fd2c58ecbd084de37bfeb27de7b0e85daa6ac63"
+    },
+    {
+      "path": "网页/start.cmd",
+      "sha256": "a03e3dc2c61cbfe81d8c0faecd1df8383f90fe42488b9e214ad41a743cce0146"
+    },
+    {
+      "path": "计划页/analysis.mjs",
+      "sha256": "0a6d350589dd593a9ed7be557cbcf13f9a2da5ac42ca1afd87933bd7cd2dc44c"
+    },
+    {
+      "path": "计划页/analysis.test.mjs",
+      "sha256": "13da303b4325ae367afd0fd765e5ed23bd810a03964640c9e9f495f87a46b422"
+    },
+    {
+      "path": "计划页/app.test.mjs",
+      "sha256": "78b03d064d1932fa60df5eff7d081a37dad506c96afe0273978add99dbed8dd8"
+    },
+    {
+      "path": "计划页/context.mjs",
+      "sha256": "3396b50e024abd05cd73d80f6795b8a65c90540a29b0006251e84755edc00466"
+    },
+    {
+      "path": "计划页/context.test.mjs",
+      "sha256": "7f18fce8de1194b27dec1d300cfa4521cbfc9a2287482ea64e70538e7abf25cb"
+    },
+    {
+      "path": "计划页/draft.mjs",
+      "sha256": "a9a175df27f27392fe2a690b35e0df8a8c0d82d23802456d6fbb98e6a4d30d55"
+    },
+    {
+      "path": "计划页/draft.test.mjs",
+      "sha256": "7bcd379e585632fdbd23fdb68d7fde7fa63b0ca0bb32d658489ed5d817558bd1"
+    },
+    {
+      "path": "计划页/fsguard.mjs",
+      "sha256": "597fd5752a68040397e8dcb81b1bc2a6a16b71689a43669ee104c84b90de18f7"
+    },
+    {
+      "path": "计划页/fsguard.test.mjs",
+      "sha256": "678722e0b2d56e416be29b2b2d28c197c11985bf82ffeff5380a09aee923e43e"
+    },
+    {
+      "path": "计划页/lock.mjs",
+      "sha256": "ae1f89ed72b132223ae67ea07f5039f62fbdad38c9d22b57d4e851a6c79f168e"
+    },
+    {
+      "path": "计划页/log.mjs",
+      "sha256": "f38e1513ed01a10925cadbf2593d0ab9645824bd7b222d64ec6f8fe8b5d0e8f9"
+    },
+    {
+      "path": "计划页/log.test.mjs",
+      "sha256": "84c85c4950717463459c514e0a56bc36dc594bf1809e1746c14268fde09a9792"
+    },
+    {
+      "path": "计划页/package.json",
+      "sha256": "1644f4eff8fa2685245feff3b5908a6c81ac6a894d54e9006e4f4aef464084b3"
+    },
+    {
+      "path": "计划页/periodic.test.mjs",
+      "sha256": "3eb4b2875d68a3a4af911fd4650212dd51296aed7823694b1b17ac48fa3cb90f"
+    },
+    {
+      "path": "计划页/planning.test.mjs",
+      "sha256": "ee8b17c000c41c6a0c0efcbdf13eded06fd6f8e09a35df8b6d918c64f6693d14"
+    },
+    {
+      "path": "计划页/public/app.js",
+      "sha256": "4505bab9da00947f65afb92f62bc9ed91a960cdcedfeb7b8b6b544b1756dcc8a"
+    },
+    {
+      "path": "计划页/public/index.html",
+      "sha256": "329f2bb07e597d0bd3a1921bf8c9458f7e4238d5903d275eb423be48873e0a7b"
+    },
+    {
+      "path": "计划页/public/periodic.js",
+      "sha256": "ed2ca75bfa1591eba6c089aed9e9336dbb145120e31518932b062adff796de02"
+    },
+    {
+      "path": "计划页/public/style.css",
+      "sha256": "244b097040642ccb31613db3df1a26d994119936746e270626c87a69fac9ef40"
+    },
+    {
+      "path": "计划页/public/view.js",
+      "sha256": "67bed2f99a8b5cd69e663c95009fbc0aabbeb40128f059a10a171ca9b0762a19"
+    },
+    {
+      "path": "计划页/readings.mjs",
+      "sha256": "924bbbadadd4c79fee33205a889bb1540d76985956a82775d34220d6bbfcc304"
+    },
+    {
+      "path": "计划页/readings.test.mjs",
+      "sha256": "6d06afba54b88bc312b184488ec09d421579327523886958867d7d65cd8dffcd"
+    },
+    {
+      "path": "计划页/recurrence.test.mjs",
+      "sha256": "2a25183cb0abefd48cb186aa469fa827b06ce27b7fe268431af6806a8bb23ad5"
+    },
+    {
+      "path": "计划页/server.mjs",
+      "sha256": "fa830cebd32a95b8e8a792ab5e5b7737d7c242392cfb0fb55e01e806b4530b0a"
+    },
+    {
+      "path": "计划页/server.test.mjs",
+      "sha256": "b4f414e8a9a48ea5a0699b978f6ce1f5c8973502a380b49ccb9de0e92cfa5c14"
+    },
+    {
+      "path": "计划页/start.cmd",
+      "sha256": "9ca66f61c08604886276bb640b17905376480a8347ff694efaccc39f88ad03f1"
+    },
+    {
+      "path": "计划页/store.mjs",
+      "sha256": "2f2ba4a41dcf93bacc07c158516812dccf9503c0b6f96b5367d2c0834e691e32"
+    },
+    {
+      "path": "计划页/task-state.test.mjs",
+      "sha256": "9d4f2696d6e26e3e71988eead55a4f73222c666e6d22d151270a9afe35d340ef"
+    },
+    {
+      "path": "计划页/ui.test.mjs",
+      "sha256": "ba41cf34bfb78ce565ea1e2ed88118b2de94f19660d07818dc897739e2c7f169"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6919e0f08563d7636bd587f37f8c8f3171c69f77c71bcc4004430f62891ec564"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "fd1e7b1b1ea81e045996ff9d638954201dd46345d935bd6e08a2687ec299a024"
+    }
+  ]
+}

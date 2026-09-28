@@ -1,0 +1,66 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createTestWorkspace } from './fsguard.mjs';
+import { createStore } from './store.mjs';
+import { generateDraft } from './draft.mjs';
+import { startPlanServer } from './server.mjs';
+
+test('draft preserves record boundary, fields, subjective separation and unique output names', async t => {
+  const fixture = await createTestWorkspace(); t.after(() => fixture.dispose());
+  const template = await fixture.source('实录/_模板-实录.md');
+  await fixture.seed('实录/_模板-实录.md', template);
+  await fixture.seed('实录/在办/keep.md', 'unchanged');
+  await fixture.seed('计划/日志/2026-09-06.md', '- 09:00:00 记 20260906-001 对方可能在拖延\n- 09:01:00 始 20260906-001 25\n- 09:26:00 止 20260906-001 25 完成\n- 09:27:00 完 20260906-001\n- 09:28:00 注 - 我觉得有些烦躁\n');
+  const before = await fixture.snapshot('实录');
+  const store = createStore(fixture.guard);
+  const first = await generateDraft(store, '2026-09-06');
+  const original = await fixture.guard.readText(first.path);
+  const second = await generateDraft(store, '2026-09-06');
+  assert.equal(first.path, '计划/草稿/2026-09-06-实录草稿.md');
+  assert.notEqual(first.path, second.path);
+  assert.equal(await fixture.guard.readText(first.path), original);
+  assert.deepEqual(await fixture.snapshot('实录'), before);
+  assert.equal(await fixture.guard.readText('实录/_模板-实录.md'), template);
+  assert.equal(original.match(/^阶段: 快录$/gm)?.length, 1);
+  for (const field of ['定域\u5366', '定位\u723b', '经文\u5224\u8bcd', '\u5409\u51f6倾向']) assert.ok(original.includes(`${field}: 未决\n`));
+  for (const line of ['编号: <待填写>', '标题: <待填写>', '睡眠: <待填写>', '发生日: 2026-09-06', '复核日: 2026-10-06', '执行: 未填', '推测: 无', '推测来源: 不适用', '兑现: 不适用']) assert.ok(original.includes(line));
+  const facts = original.split('## 一、')[1].split('## 二、')[0];
+  assert.doesNotMatch(facts, /对方可能在拖延|我觉得有些烦躁/);
+  assert.match(facts, /09:01:00.*开始专注/);
+  const subjective = original.split('## 二、')[1].split('## 三、')[0];
+  assert.match(subjective, /对方可能在拖延/); assert.match(subjective, /我觉得有些烦躁/);
+  for (const section of original.slice(original.indexOf('## 三、')).split(/^## /m).filter(Boolean)) assert.equal(section.trim().split('\n').length, 1);
+  await assert.rejects(generateDraft(store, '../escape'), /日期/);
+  await assert.rejects(generateDraft(store, '2026-09-05'), /没有/);
+});
+test('explicit HTTP draft request creates a file; reads never generate drafts', async t => {
+  const fixture = await createTestWorkspace();
+  await fixture.seed('实录/_模板-实录.md', await fixture.source('实录/_模板-实录.md'));
+  const app = await startPlanServer({ guard: fixture.guard, port: 0, clock: () => new Date('2026-09-06T09:00:00') });
+  t.after(async () => { await app.close(); await fixture.dispose(); });
+  const base = `http://127.0.0.1:${app.server.address().port}`;
+  await fetch(`${base}/api/event`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ verb: '记', text: '准备资料' }) });
+  await fetch(`${base}/api/open`);
+  assert.deepEqual(await fixture.guard.listNames('计划/草稿'), []);
+  assert.equal((await fetch(`${base}/api/draft`)).status, 405);
+  const response = await fetch(`${base}/api/draft`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ date: '2026-09-06' }) });
+  assert.equal(response.status, 201);
+  assert.equal((await fixture.guard.listNames('计划/草稿')).length, 1);
+});
+
+test('task execution is factual while multiline task notes stay in quoted subjective material', async t => {
+  const fixture = await createTestWorkspace(); t.after(() => fixture.dispose());
+  await fixture.seed('实录/_模板-实录.md', await fixture.source('实录/_模板-实录.md'));
+  const store = createStore(fixture.guard, () => new Date('2026-09-28T09:00:00'));
+  const { id } = await store.event({ verb: '记', text: '合作计划' });
+  await store.event({ verb: '改', id, text: '需要核实的合作', body: '我猜对方愿意支持\n## 三、伪造章节\n<script>不要作为事实</script>', roles: ['工作'] });
+  await store.event({ verb: '行', id, action: 'start' });
+  await store.event({ verb: '行', id, action: 'pause' });
+  const result = await generateDraft(store, '2026-09-28');
+  const draft = await fixture.guard.readText(result.path);
+  const facts = draft.split('## 一、')[1].split('## 二、')[0];
+  assert.match(facts, /开始执行/); assert.match(facts, /暂停执行/);
+  assert.doesNotMatch(facts, /对方愿意支持/);
+  assert.match(draft, /> 我猜对方愿意支持\n> ## 三、伪造章节\n> &lt;script&gt;不要作为事实&lt;\/script&gt;/);
+  assert.equal(draft.match(/^## /gm).length, 7);
+});

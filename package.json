@@ -1,0 +1,90 @@
+{
+  "name": "yijing-desktop",
+  "version": "1.5.0",
+  "private": true,
+  "description": "一刻 · 本地计划与周易学习",
+  "author": "Local personal project",
+  "type": "module",
+  "main": "桌面/main.mjs",
+  "scripts": {
+    "desktop": "electron .",
+    "test": "npm run test:desktop && npm --prefix 计划页 test && npm --prefix 学习页 test && npm --prefix 网页 test",
+    "test:desktop": "node --test 桌面/*.test.mjs",
+    "pack": "electron-builder --win --x64 --dir",
+    "dist": "electron-builder --win nsis portable --x64",
+    "postdist": "node 桌面/prepare-release.mjs && node 桌面/verify-distribution.mjs",
+    "test:packaged": "node 桌面/verify-layout.mjs --packaged && node 桌面/verify-periodic.mjs --packaged && node 桌面/verify-opportunities.mjs --packaged"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "electron": "44.4.3",
+    "electron-builder": "26.15.3",
+    "playwright-core": "1.63.0"
+  },
+  "build": {
+    "appId": "local.yijing.yike",
+    "productName": "一刻",
+    "asar": false,
+    "compression": "maximum",
+    "electronLanguages": [
+      "zh-CN",
+      "zh-TW",
+      "en-US"
+    ],
+    "directories": {
+      "output": "dist/build",
+      "buildResources": "桌面/assets"
+    },
+    "files": [
+      "package.json",
+      "桌面/main.mjs",
+      "桌面/preload.cjs",
+      "桌面/data.mjs",
+      "桌面/ai.mjs",
+      "桌面/assets/icon.ico",
+      "网页/server.mjs",
+      "网页/package.json",
+      "网页/public/**",
+      "计划页/*.mjs",
+      "计划页/package.json",
+      "计划页/public/**",
+      "学习页/server.mjs",
+      "学习页/package.json",
+      "学习页/public/**",
+      "知识库/知识卡*.md",
+      "实录/_模板-实录.md",
+      "!**/*.test.mjs",
+      "!**/*.test.js"
+    ],
+    "win": {
+      "icon": "桌面/assets/icon.ico",
+      "executableName": "Yike",
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "artifactName": "Yike-${version}-${arch}-setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "一刻",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": false,
+      "installerLanguages": [
+        "zh_CN",
+        "en_US"
+      ],
+      "language": "2052"
+    },
+    "portable": {
+      "artifactName": "Yike-${version}-${arch}-portable.exe"
+    },
+    "publish": null
+  }
+}
